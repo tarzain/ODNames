@@ -38,13 +38,10 @@ function fire() {
 
 	var option = $('#gameMode :selected').val();
 	switch (option) {
-		case 'spanish':
-			sessionData = spanishData.slice(0);
-			break;
-		case '2knouns':
+		case 'default':
 			sessionData = data.slice(0);
 			break;
-		case 'movies':
+		case 'opendoor':
 			sessionData = movieData.slice(0);
 			break;
 		case 'custom':
@@ -55,7 +52,7 @@ function fire() {
 			sessionData = customData.slice(0);
 			break;
 		default:
-			sessionData = defaultData.slice(0);
+			sessionData = opendoorData.slice(0);
 	}
 
 	wordsSelected = [];
